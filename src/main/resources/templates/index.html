@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+    <title>Pictweet</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__bar row">
+      <h1 class="grid-6"><a href="/">PicTweet</a></h1>
+      <div class="user_nav grid-6">
+        <a class="post" href="/tweets/new">投稿する</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="contents row">
+<!--    <% @tweets.each do |tweet| %>-->
+    <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+<!--      <p><%= tweet.text %></p>-->
+      <span class="name">
+<!--          <%= tweet.name %>-->
+        </span>
+    </div>
+<!--    <% end %>-->
+  </div>
+</body>
+</html>
